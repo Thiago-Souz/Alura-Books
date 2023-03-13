@@ -1,0 +1,116 @@
+.card{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px; 
+}
+
+.card__descricao{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    margin: 1em 1em 0 1em;
+}
+
+.descricao__titulo{
+    color: var(--cor-laranja);
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 0.3em 0 0;
+    
+}
+
+.descricao__titulo-livro{
+    color: var(--cor-titulo);
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0;
+}
+
+.descricao__livro{
+   color: #000000D9;
+   text-align: left;
+   font-size: 14px;
+   font-weight: 400;
+   padding: 0 2em 1em 0;
+}
+
+.descricao__imagem{
+    height: 40vw;
+}
+
+.card__saiba-mais{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1em;
+
+}
+
+.card__saiba-mais{
+    margin: 0 0 2em 2em;
+    
+}
+
+.card_favoritos-compra {
+    margin: 0 1em 1em 0;
+}
+
+.card__sacola, .card__favoritos{
+    margin: 0 1em 0 0; 
+
+}
+
+.card_favoritos-compra{
+    margin: 1em 0;
+}
+
+.card__botao-saiba-mais{
+    text-decoration: none;
+    color: var(--cor-branco);
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 2em 1em 2em;
+    background-color: var(--cor-laranja);
+    padding: 1em;
+    width: 30vw;
+    
+}
+
+#stars{
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width: 1024px){
+    .card{
+        width: 65%;
+        margin: 2em 10em 2em auto;
+    }
+   
+    .descricao__imagem{
+        height: auto;
+    }
+
+    .card__botao-saiba-mais{
+        width: auto;
+        margin: 1em 3em;
+    }
+
+    .card__botao-saiba-mais:hover{
+        font-size: 16.5px;
+        transition: 1s;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .card{
+        width: 35%;
+        height: 20%;
+        margin-bottom: 3.7em;
+        margin-top: auto;
+    }
+
+    .card__saiba-mais{
+        margin-bottom: 0;
+    }
+}
